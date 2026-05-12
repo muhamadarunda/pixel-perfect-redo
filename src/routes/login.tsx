@@ -25,7 +25,7 @@ function LoginPage() {
               <label className="text-sm font-medium text-slate-700">Username</label>
               <input
                 type="text"
-                placeholder="Contoh: admin"
+                placeholder=""
                 className="mt-2 w-full rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-500 shadow-sm outline-none transition-all focus:border-blue-400 focus:bg-white/80"
               />
             </div>
@@ -33,7 +33,7 @@ function LoginPage() {
               <label className="text-sm font-medium text-slate-700">Password</label>
               <input
                 type="password"
-                placeholder="Contoh: admin123"
+                placeholder=""
                 className="mt-2 w-full rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-500 shadow-sm outline-none transition-all focus:border-blue-400 focus:bg-white/80"
               />
             </div>
