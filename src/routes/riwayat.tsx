@@ -14,7 +14,7 @@ const logs = [
 
 function RiwayatPage() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-200 via-slate-300 to-slate-400">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500">
       <GlassBackground />
 
       <header className="relative z-10 border-b border-white/40 bg-white/30 backdrop-blur-xl">

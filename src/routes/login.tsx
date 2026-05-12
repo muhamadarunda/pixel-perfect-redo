@@ -8,7 +8,7 @@ export const Route = createFileRoute("/login")({
 
 function LoginPage() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-200 via-slate-300 to-slate-400">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500">
       <GlassBackground />
       <main className="relative mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-6 py-16">
         <div className="w-full overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/70 via-purple-300/40 to-purple-500/30 p-8 shadow-[0_8px_32px_rgba(31,38,135,0.15)] backdrop-blur-2xl">
