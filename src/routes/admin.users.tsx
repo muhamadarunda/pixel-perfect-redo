@@ -29,22 +29,22 @@ function KelolaUser() {
         <input
           type="text"
           placeholder="Cari by Nama / NIM / Plat..."
-          className="flex-1 rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 outline-none focus:border-blue-400"
+          className="flex-1 rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 outline-none focus:border-purple-400"
         />
         <div className="relative">
-          <select className="w-full appearance-none rounded-xl border border-white/70 bg-white/60 px-4 py-3 pr-10 text-sm text-slate-800 outline-none focus:border-blue-400 md:w-56">
+          <select className="w-full appearance-none rounded-xl border border-white/70 bg-white/60 px-4 py-3 pr-10 text-sm text-slate-800 outline-none focus:border-purple-400 md:w-56">
             <option>Semua Tipe</option>
             <option>Mahasiswa</option>
             <option>Pegawai</option>
           </select>
           <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
         </div>
-        <button className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-400 to-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-md">
+        <button className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-500 to-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-md">
           <Search className="h-4 w-4" /> Cari
         </button>
       </div>
 
-      <div className="mt-6 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/40 via-blue-300/20 to-blue-400/20 backdrop-blur-2xl">
+      <div className="mt-6 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/40 via-purple-300/20 to-purple-400/20 backdrop-blur-2xl">
         <table className="w-full">
           <thead className="bg-white/40 backdrop-blur">
             <tr className="text-left text-xs font-semibold uppercase tracking-wider text-slate-600">
@@ -71,7 +71,7 @@ function KelolaUser() {
                 </td>
                 <td className="px-6 py-4 text-sm text-slate-700">{u.id}</td>
                 <td className="px-6 py-4">
-                  <span className="rounded-full bg-gradient-to-r from-sky-400 to-blue-600 px-3 py-1 text-xs font-bold text-white shadow-sm">
+                  <span className="rounded-full bg-gradient-to-r from-violet-500 to-purple-600 px-3 py-1 text-xs font-bold text-white shadow-sm">
                     {u.plate}
                   </span>
                 </td>
