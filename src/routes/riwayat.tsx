@@ -46,13 +46,13 @@ function RiwayatPage() {
             <input
               type="text"
               placeholder="Ketik kata kunci..."
-              className="mt-2 w-full rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 outline-none focus:border-blue-400"
+              className="mt-2 w-full rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 outline-none focus:border-orange-400"
             />
           </div>
           <div>
             <label className="text-sm font-medium text-slate-700">Jenis Verifikasi</label>
             <div className="relative mt-2">
-              <select className="w-full appearance-none rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 outline-none focus:border-blue-400">
+              <select className="w-full appearance-none rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 outline-none focus:border-orange-400">
                 <option>Semua (Masuk/Keluar)</option>
               </select>
               <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
@@ -61,7 +61,7 @@ function RiwayatPage() {
           <div>
             <label className="text-sm font-medium text-slate-700">Status Akses</label>
             <div className="relative mt-2">
-              <select className="w-full appearance-none rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 outline-none focus:border-blue-400">
+              <select className="w-full appearance-none rounded-xl border border-white/70 bg-white/60 px-4 py-3 text-sm text-slate-800 outline-none focus:border-orange-400">
                 <option>Semua Status</option>
               </select>
               <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
@@ -69,7 +69,7 @@ function RiwayatPage() {
           </div>
         </div>
 
-        <div className="mt-6 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/40 via-blue-300/20 to-blue-400/20 backdrop-blur-2xl">
+        <div className="mt-6 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-amber-200/50 via-orange-300/30 to-orange-400/20 backdrop-blur-2xl">
           <table className="w-full">
             <thead className="bg-white/40 backdrop-blur">
               <tr className="text-left text-xs font-semibold uppercase tracking-wider text-slate-600">

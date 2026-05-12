@@ -18,9 +18,9 @@ function PendaftaranUser() {
         </button>
       </div>
 
-      <div className="mt-8 rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/50 via-blue-300/30 to-blue-500/20 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.1)] backdrop-blur-2xl md:p-8">
+      <div className="mt-8 rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/50 via-purple-300/30 to-purple-500/20 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.1)] backdrop-blur-2xl md:p-8">
         <h2 className="flex items-center gap-2 text-lg font-bold text-slate-800">
-          <FileText className="h-5 w-5 text-blue-600" /> Form Registrasi Pengguna & Kendaraan
+          <FileText className="h-5 w-5 text-purple-600" /> Form Registrasi Pengguna & Kendaraan
         </h2>
         <div className="mt-5 h-px w-full bg-white/50" />
 
@@ -71,7 +71,7 @@ function PendaftaranUser() {
                   <Camera className="h-12 w-12 text-slate-500/60" strokeWidth={1.5} />
                 </div>
                 <div className="mt-3 grid grid-cols-2 gap-2">
-                  <button className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-400 to-blue-600 px-4 py-2.5 text-sm font-medium text-white shadow-md">
+                  <button className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-500 to-purple-600 px-4 py-2.5 text-sm font-medium text-white shadow-md">
                     <Camera className="h-4 w-4" /> Ambil Foto
                   </button>
                   <button className="flex items-center justify-center gap-2 rounded-xl border border-white/70 bg-white/60 px-4 py-2.5 text-sm font-medium text-slate-700">

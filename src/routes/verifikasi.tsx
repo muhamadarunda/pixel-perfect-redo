@@ -70,7 +70,7 @@ function VerifikasiPage() {
           </div>
 
           {/* Result */}
-          <div className="overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/60 via-purple-300/40 to-purple-500/30 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.12)] backdrop-blur-2xl">
+          <div className="overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/60 via-blue-300/40 to-blue-500/30 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.12)] backdrop-blur-2xl">
             <h2 className="text-lg font-bold text-slate-800">Hasil Verifikasi Masuk</h2>
             <div className="mt-4 rounded-2xl border border-emerald-300/70 bg-gradient-to-br from-emerald-200/70 to-emerald-400/40 p-6 text-center backdrop-blur-sm">
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 shadow-lg">
@@ -95,7 +95,7 @@ function VerifikasiPage() {
                 </p>
                 <div className="mt-2 flex flex-wrap gap-2">
                   <span className="rounded-full bg-gradient-to-r from-sky-400 to-blue-500 px-3 py-1 text-xs font-semibold text-white">YOLO: 100.0%</span>
-                  <span className="rounded-full bg-gradient-to-r from-violet-400 to-purple-600 px-3 py-1 text-xs font-semibold text-white">FACENET: 80.9%</span>
+                  <span className="rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 px-3 py-1 text-xs font-semibold text-white">FACENET: 80.9%</span>
                 </div>
               </div>
 
@@ -120,7 +120,7 @@ function VerifikasiPage() {
                 <Clock className="h-4 w-4" /> Durasi proses: 2.7 detik
               </div>
 
-              <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-500 to-purple-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-500/30">
+              <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/30">
                 <Cpu className="h-4 w-4" /> Lihat Preprocessing AI
               </button>
             </div>
