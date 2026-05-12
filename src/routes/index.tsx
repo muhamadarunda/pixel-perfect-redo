@@ -14,6 +14,7 @@ const modules = [
     title: "Verifikasi",
     desc: "Pindai wajah & plat nomor kendaraan untuk akses masuk dan keluar area parkir.",
     cta: "Buka Halaman",
+    to: "/verifikasi",
   },
   {
     icon: Clock,
@@ -23,6 +24,7 @@ const modules = [
     title: "Riwayat Log",
     desc: "Pantau riwayat rekam jejak akses seluruh kendaraan terverifikasi.",
     cta: "Lihat Riwayat",
+    to: "/riwayat",
   },
   {
     icon: Settings,
@@ -32,6 +34,7 @@ const modules = [
     title: "Admin Panel",
     desc: "Pendaftaran user, kelola data pengguna, dan penghapusan log harian.",
     cta: "Login Admin",
+    to: "/login",
   },
 ];
 
@@ -75,7 +78,7 @@ function Index() {
 
         {/* Cards */}
         <div className="mt-12 grid w-full grid-cols-1 gap-6 md:grid-cols-3">
-          {modules.map(({ icon: Icon, iconBg, tint, glow, title, desc, cta }) => (
+          {modules.map(({ icon: Icon, iconBg, tint, glow, title, desc, cta, to }) => (
             <div
               key={title}
               className={`group relative flex flex-col overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br ${tint} p-7 shadow-[0_8px_32px_rgba(31,38,135,0.12)] backdrop-blur-2xl transition-all hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(31,38,135,0.2)]`}
@@ -97,7 +100,7 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-slate-700">{desc}</p>
                 <div className="mt-auto pt-6">
                   <Link
-                    to="/"
+                    to={to}
                     className="inline-flex w-fit items-center gap-2 rounded-full border border-white/70 bg-white/60 px-5 py-2 text-sm font-medium text-slate-800 shadow-sm transition-all hover:border-white hover:bg-white/90"
                   >
                     {cta} <ArrowRight className="h-4 w-4" />
