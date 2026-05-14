@@ -122,12 +122,12 @@ function VerifikasiPage() {
                 <Clock className="h-4 w-4" /> Durasi proses: 2.7 detik
               </div>
 
-              <button
-                onClick={() => setShowPreprocessing(true)}
+              <Link
+                to="/preprocessing"
                 className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/30"
               >
                 <Cpu className="h-4 w-4" /> Lihat Preprocessing AI
-              </button>
+              </Link>
             </div>
           </div>
         </div>

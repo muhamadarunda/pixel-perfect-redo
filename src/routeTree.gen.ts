@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VerifikasiRouteImport } from './routes/verifikasi'
 import { Route as RiwayatRouteImport } from './routes/riwayat'
+import { Route as PreprocessingRouteImport } from './routes/preprocessing'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
@@ -26,6 +27,11 @@ const VerifikasiRoute = VerifikasiRouteImport.update({
 const RiwayatRoute = RiwayatRouteImport.update({
   id: '/riwayat',
   path: '/riwayat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreprocessingRoute = PreprocessingRouteImport.update({
+  id: '/preprocessing',
+  path: '/preprocessing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LoginRoute = LoginRouteImport.update({
@@ -63,6 +69,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRouteWithChildren
   '/login': typeof LoginRoute
+  '/preprocessing': typeof PreprocessingRoute
   '/riwayat': typeof RiwayatRoute
   '/verifikasi': typeof VerifikasiRoute
   '/admin/riwayat': typeof AdminRiwayatRoute
@@ -72,6 +79,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/login': typeof LoginRoute
+  '/preprocessing': typeof PreprocessingRoute
   '/riwayat': typeof RiwayatRoute
   '/verifikasi': typeof VerifikasiRoute
   '/admin/riwayat': typeof AdminRiwayatRoute
@@ -83,6 +91,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/admin': typeof AdminRouteWithChildren
   '/login': typeof LoginRoute
+  '/preprocessing': typeof PreprocessingRoute
   '/riwayat': typeof RiwayatRoute
   '/verifikasi': typeof VerifikasiRoute
   '/admin/riwayat': typeof AdminRiwayatRoute
@@ -95,6 +104,7 @@ export interface FileRouteTypes {
     | '/'
     | '/admin'
     | '/login'
+    | '/preprocessing'
     | '/riwayat'
     | '/verifikasi'
     | '/admin/riwayat'
@@ -104,6 +114,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/login'
+    | '/preprocessing'
     | '/riwayat'
     | '/verifikasi'
     | '/admin/riwayat'
@@ -114,6 +125,7 @@ export interface FileRouteTypes {
     | '/'
     | '/admin'
     | '/login'
+    | '/preprocessing'
     | '/riwayat'
     | '/verifikasi'
     | '/admin/riwayat'
@@ -125,6 +137,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRouteWithChildren
   LoginRoute: typeof LoginRoute
+  PreprocessingRoute: typeof PreprocessingRoute
   RiwayatRoute: typeof RiwayatRoute
   VerifikasiRoute: typeof VerifikasiRoute
 }
@@ -143,6 +156,13 @@ declare module '@tanstack/react-router' {
       path: '/riwayat'
       fullPath: '/riwayat'
       preLoaderRoute: typeof RiwayatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preprocessing': {
+      id: '/preprocessing'
+      path: '/preprocessing'
+      fullPath: '/preprocessing'
+      preLoaderRoute: typeof PreprocessingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/login': {
@@ -208,6 +228,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRouteWithChildren,
   LoginRoute: LoginRoute,
+  PreprocessingRoute: PreprocessingRoute,
   RiwayatRoute: RiwayatRoute,
   VerifikasiRoute: VerifikasiRoute,
 }
