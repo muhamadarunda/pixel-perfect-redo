@@ -18,7 +18,7 @@ function PendaftaranUser() {
         </button>
       </div>
 
-      <div className="mt-8 rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/50 via-purple-300/30 to-purple-500/20 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.1)] backdrop-blur-2xl md:p-8">
+      <div className="mt-8 rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/70 via-purple-300/50 to-purple-500/40 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.1)] backdrop-blur-2xl md:p-8">
         <h2 className="flex items-center gap-2 text-lg font-bold text-slate-800">
           <FileText className="h-5 w-5 text-purple-600" /> Form Registrasi Pengguna & Kendaraan
         </h2>

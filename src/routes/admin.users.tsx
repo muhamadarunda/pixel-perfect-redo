@@ -44,7 +44,7 @@ function KelolaUser() {
         </button>
       </div>
 
-      <div className="mt-6 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/40 via-purple-300/20 to-purple-400/20 backdrop-blur-2xl">
+      <div className="mt-6 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/60 via-purple-300/40 to-purple-400/40 backdrop-blur-2xl">
         <table className="w-full">
           <thead className="bg-white/40 backdrop-blur">
             <tr className="text-left text-xs font-semibold uppercase tracking-wider text-slate-600">
