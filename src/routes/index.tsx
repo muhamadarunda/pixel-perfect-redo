@@ -40,7 +40,7 @@ const modules = [
 
 function Index() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-200 via-slate-300 to-slate-400">
       {/* Decorative glass shapes */}
       <div className="pointer-events-none absolute -top-32 -right-20 h-96 w-[32rem] rotate-6 rounded-3xl border border-white/50 bg-white/35 shadow-lg backdrop-blur-xl" />
       <div className="pointer-events-none absolute top-48 right-4 h-80 w-96 -rotate-3 rounded-3xl border border-white/40 bg-white/25 shadow-md backdrop-blur-xl" />
@@ -71,7 +71,7 @@ function Index() {
         </div>
 
         {/* Subtitle */}
-        <p className="mt-10 max-w-2xl text-center text-base font-medium text-slate-800">
+        <p className="mt-10 max-w-2xl text-center text-base text-slate-700">
           Pilih modul yang ingin Anda akses. Modul Verifikasi digunakan di pos jaga,
           sedangkan Admin Panel digunakan untuk manajemen data.
         </p>

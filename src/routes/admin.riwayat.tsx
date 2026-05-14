@@ -16,8 +16,8 @@ function KelolaRiwayat() {
     <div>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-slate-900 drop-shadow-sm">Admin Management</h1>
-          <p className="mt-1 font-medium text-slate-800">Pusat kontrol data pengguna, registrasi kendaraan, dan pengawasan log sistem.</p>
+          <h1 className="text-3xl font-bold text-slate-800">Admin Management</h1>
+          <p className="mt-1 text-slate-600">Pusat kontrol data pengguna, registrasi kendaraan, dan pengawasan log sistem.</p>
         </div>
         <button className="flex items-center gap-2 rounded-xl border border-white/70 bg-white/60 px-5 py-2.5 text-sm font-medium text-slate-700 shadow-sm backdrop-blur hover:bg-white/80">
           <FileText className="h-4 w-4" /> Export Data
@@ -33,7 +33,7 @@ function KelolaRiwayat() {
         </button>
       </div>
 
-      <p className="mt-5 font-medium text-slate-800">Menampilkan catatan log keseluruhan. (Fitur sama dengan Menu Riwayat, + fungsi hapus)</p>
+      <p className="mt-5 text-slate-600">Menampilkan catatan log keseluruhan. (Fitur sama dengan Menu Riwayat, + fungsi hapus)</p>
 
       <div className="mt-5 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-violet-200/40 via-purple-300/20 to-purple-400/20 backdrop-blur-2xl">
         <table className="w-full">

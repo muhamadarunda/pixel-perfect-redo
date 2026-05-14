@@ -14,7 +14,7 @@ const navItems = [
 
 function AdminLayout() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-200 via-slate-300 to-slate-400">
       <GlassBackground />
       <div className="relative flex min-h-screen">
         {/* Sidebar */}
@@ -24,7 +24,7 @@ function AdminLayout() {
             <span className="text-lg font-bold text-slate-800">SPARKO-CV Admin</span>
           </div>
 
-          <p className="mt-10 text-xs font-bold uppercase tracking-wider text-slate-700">Manajemen Parkir</p>
+          <p className="mt-10 text-xs font-semibold uppercase tracking-wider text-slate-500">Manajemen Parkir</p>
           <nav className="mt-3 space-y-1">
             {navItems.map(({ to, label, icon: Icon, exact }) => (
               <Link
@@ -44,7 +44,7 @@ function AdminLayout() {
             ))}
           </nav>
 
-          <p className="mt-8 text-xs font-bold uppercase tracking-wider text-slate-700">Sistem</p>
+          <p className="mt-8 text-xs font-semibold uppercase tracking-wider text-slate-500">Sistem</p>
           <nav className="mt-3 space-y-1">
             <Link
               to="/"

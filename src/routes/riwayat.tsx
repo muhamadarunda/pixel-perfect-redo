@@ -14,7 +14,7 @@ const logs = [
 
 function RiwayatPage() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-200 via-slate-300 to-slate-400">
       <GlassBackground />
 
       <header className="relative z-10 border-b border-white/40 bg-white/30 backdrop-blur-xl">
@@ -32,8 +32,8 @@ function RiwayatPage() {
       <main className="relative mx-auto max-w-7xl px-6 py-10">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h1 className="text-4xl font-bold text-slate-900 drop-shadow-sm">Riwayat Log Akses</h1>
-            <p className="mt-2 font-medium text-slate-800">Catatan lengkap aktivitas keluar masuk kendaraan dan verifikasi identitas.</p>
+            <h1 className="text-4xl font-bold text-slate-800">Riwayat Log Akses</h1>
+            <p className="mt-2 text-slate-600">Catatan lengkap aktivitas keluar masuk kendaraan dan verifikasi identitas.</p>
           </div>
           <button className="flex items-center gap-2 rounded-xl border border-white/70 bg-white/60 px-5 py-2.5 text-sm font-medium text-slate-700 shadow-sm hover:bg-white/80">
             <RefreshCw className="h-4 w-4" /> Refresh Data
