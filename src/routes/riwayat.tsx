@@ -69,7 +69,7 @@ function RiwayatPage() {
           </div>
         </div>
 
-        <div className="mt-6 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-amber-200/50 via-orange-300/30 to-orange-400/20 backdrop-blur-2xl">
+        <div className="mt-6 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-amber-200/70 via-orange-300/50 to-orange-400/40 backdrop-blur-2xl">
           <table className="w-full">
             <thead className="bg-white/40 backdrop-blur">
               <tr className="text-left text-xs font-semibold uppercase tracking-wider text-slate-600">

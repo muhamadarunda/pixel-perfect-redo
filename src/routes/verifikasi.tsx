@@ -39,7 +39,7 @@ function VerifikasiPage() {
 
         <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {/* Camera */}
-          <div className="lg:col-span-2 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/60 via-blue-300/40 to-blue-500/30 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.12)] backdrop-blur-2xl">
+          <div className="lg:col-span-2 overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/80 via-blue-300/60 to-blue-500/50 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.12)] backdrop-blur-2xl">
             <div className="flex items-center justify-between">
               <h2 className="flex items-center gap-2 text-lg font-bold text-slate-800">
                 <Camera className="h-5 w-5 text-blue-600" /> Kamera Utama (Masuk)
@@ -70,7 +70,7 @@ function VerifikasiPage() {
           </div>
 
           {/* Result */}
-          <div className="overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/60 via-blue-300/40 to-blue-500/30 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.12)] backdrop-blur-2xl">
+          <div className="overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/80 via-blue-300/60 to-blue-500/50 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.12)] backdrop-blur-2xl">
             <h2 className="text-lg font-bold text-slate-800">Hasil Verifikasi Masuk</h2>
             <div className="mt-4 rounded-2xl border border-emerald-300/70 bg-gradient-to-br from-emerald-200/70 to-emerald-400/40 p-6 text-center backdrop-blur-sm">
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 shadow-lg">
