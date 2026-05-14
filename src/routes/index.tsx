@@ -71,7 +71,7 @@ function Index() {
         </div>
 
         {/* Subtitle */}
-        <p className="mt-10 max-w-2xl text-center text-base text-slate-700">
+        <p className="mt-10 max-w-2xl text-center text-base font-medium text-slate-800">
           Pilih modul yang ingin Anda akses. Modul Verifikasi digunakan di pos jaga,
           sedangkan Admin Panel digunakan untuk manajemen data.
         </p>
