@@ -24,7 +24,7 @@ function AdminLayout() {
             <span className="text-lg font-bold text-slate-800">SPARKO-CV Admin</span>
           </div>
 
-          <p className="mt-10 text-xs font-semibold uppercase tracking-wider text-slate-500">Manajemen Parkir</p>
+          <p className="mt-10 text-xs font-bold uppercase tracking-wider text-slate-700">Manajemen Parkir</p>
           <nav className="mt-3 space-y-1">
             {navItems.map(({ to, label, icon: Icon, exact }) => (
               <Link
@@ -44,7 +44,7 @@ function AdminLayout() {
             ))}
           </nav>
 
-          <p className="mt-8 text-xs font-semibold uppercase tracking-wider text-slate-500">Sistem</p>
+          <p className="mt-8 text-xs font-bold uppercase tracking-wider text-slate-700">Sistem</p>
           <nav className="mt-3 space-y-1">
             <Link
               to="/"

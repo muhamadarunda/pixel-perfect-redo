@@ -34,8 +34,8 @@ function VerifikasiPage() {
       </header>
 
       <main className="relative mx-auto max-w-7xl px-6 py-10">
-        <h1 className="text-4xl font-bold text-slate-800">Gate In (Masuk)</h1>
-        <p className="mt-2 text-slate-600">Verifikasi identitas dan plat nomor kendaraan sekaligus untuk akses masuk.</p>
+        <h1 className="text-4xl font-bold text-slate-900 drop-shadow-sm">Gate In (Masuk)</h1>
+        <p className="mt-2 font-medium text-slate-800">Verifikasi identitas dan plat nomor kendaraan sekaligus untuk akses masuk.</p>
 
         <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {/* Camera */}
