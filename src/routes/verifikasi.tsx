@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Camera, Video, CircleDot, RotateCcw, Upload, CheckCircle2, User, Car, Clock, Cpu, LogIn, LogOut, Home } from "lucide-react";
+import { useState } from "react";
+import { Camera, Video, CircleDot, RotateCcw, Upload, CheckCircle2, User, Car, Clock, Cpu, LogIn, LogOut, Home, X, ImageIcon } from "lucide-react";
 import { GlassBackground, SparkoLogo } from "@/components/glass-bg";
 
 export const Route = createFileRoute("/verifikasi")({
@@ -7,6 +8,7 @@ export const Route = createFileRoute("/verifikasi")({
 });
 
 function VerifikasiPage() {
+  const [showPreprocessing, setShowPreprocessing] = useState(false);
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-200 via-slate-300 to-slate-400">
       <GlassBackground />
