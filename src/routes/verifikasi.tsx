@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Camera, Video, CircleDot, RotateCcw, Upload, CheckCircle2, User, Car, Clock, Cpu, LogIn, LogOut, Home } from "lucide-react";
+import { useState } from "react";
+import { Camera, Video, CircleDot, RotateCcw, Upload, CheckCircle2, User, Car, Clock, Cpu, LogIn, LogOut, Home, X, ImageIcon } from "lucide-react";
 import { GlassBackground, SparkoLogo } from "@/components/glass-bg";
 
 export const Route = createFileRoute("/verifikasi")({
@@ -7,6 +8,7 @@ export const Route = createFileRoute("/verifikasi")({
 });
 
 function VerifikasiPage() {
+  const [showPreprocessing, setShowPreprocessing] = useState(false);
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-200 via-slate-300 to-slate-400">
       <GlassBackground />
@@ -120,13 +122,84 @@ function VerifikasiPage() {
                 <Clock className="h-4 w-4" /> Durasi proses: 2.7 detik
               </div>
 
-              <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/30">
+              <button
+                onClick={() => setShowPreprocessing(true)}
+                className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/30"
+              >
                 <Cpu className="h-4 w-4" /> Lihat Preprocessing AI
               </button>
             </div>
           </div>
         </div>
       </main>
+
+      {showPreprocessing && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div
+            className="absolute inset-0 bg-slate-900/30 backdrop-blur-sm"
+            onClick={() => setShowPreprocessing(false)}
+          />
+          <div className="relative z-10 w-full max-w-5xl overflow-hidden rounded-2xl border border-white/60 bg-gradient-to-br from-sky-200/80 via-blue-300/60 to-blue-500/50 p-6 shadow-[0_8px_32px_rgba(31,38,135,0.25)] backdrop-blur-2xl">
+            <div className="flex items-center justify-between">
+              <h2 className="flex items-center gap-2 text-lg font-bold text-slate-800">
+                <Cpu className="h-5 w-5 text-blue-600" /> Visualisasi Preprocessing AI
+              </h2>
+              <button
+                onClick={() => setShowPreprocessing(false)}
+                className="rounded-full border border-white/70 bg-white/60 p-1.5 text-slate-700 hover:bg-white/80"
+                aria-label="Tutup"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+
+            <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-slate-700">
+                  Tahap 1: Deteksi Wajah
+                </p>
+                <div className="mt-3 overflow-hidden rounded-xl border border-white/60 bg-white/40 backdrop-blur-sm">
+                  <p className="border-b border-white/50 bg-white/40 px-4 py-2 text-xs font-medium text-slate-700">
+                    1. Visualisasi Deteksi Wajah Bbox/Mask
+                  </p>
+                  <div className="flex aspect-square items-center justify-center bg-slate-300/40">
+                    <ImageIcon className="h-16 w-16 text-slate-500/60" strokeWidth={1.5} />
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-slate-700">
+                  Tahap 2: Pembacaan Plat Nomor
+                </p>
+                <div className="mt-3 overflow-hidden rounded-xl border border-white/60 bg-white/40 backdrop-blur-sm">
+                  <p className="border-b border-white/50 bg-white/40 px-4 py-2 text-xs font-medium text-slate-700">
+                    1. Visualisasi Bbox/Mask Plate
+                  </p>
+                  <div className="flex aspect-square items-center justify-center bg-slate-300/40">
+                    <ImageIcon className="h-16 w-16 text-slate-500/60" strokeWidth={1.5} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-wrap items-center justify-end gap-3">
+              <button
+                onClick={() => setShowPreprocessing(false)}
+                className="rounded-xl border border-white/70 bg-white/60 px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-white/80"
+              >
+                Tutup Modal
+              </button>
+              <button
+                onClick={() => setShowPreprocessing(false)}
+                className="rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/30"
+              >
+                Tutup & Reset Kamera
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
